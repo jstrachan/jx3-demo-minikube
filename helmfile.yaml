@@ -35,12 +35,6 @@ releases:
   namespace: jx
   values:
   - versionStream/charts/jx-labs/jenkins-x-crds/values.yaml
-- chart: stable/nginx-ingress
-  version: 1.39.1
-  name: nginx-ingress
-  namespace: nginx
-  values:
-  - versionStream/charts/stable/nginx-ingress/values.yaml.gotmpl
 - chart: jenkins-x/tekton
   version: 0.0.56
   name: tekton
