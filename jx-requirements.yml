@@ -16,7 +16,7 @@ cluster:
   gitName: github
   gitServer: https://github.com
   namespace: jx
-  provider: docker
+  provider: minikube
 environments:
 - ingress:
     domain: ""
