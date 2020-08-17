@@ -17,6 +17,7 @@ cluster:
   gitServer: https://github.com
   namespace: jx
   provider: minikube
+  registry: 10.96.211.138
 environments:
 - ingress:
     domain: ""
