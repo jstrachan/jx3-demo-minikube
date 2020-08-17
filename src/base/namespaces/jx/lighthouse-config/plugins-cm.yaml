@@ -6,6 +6,14 @@ data:
       repos:
       - jstrachan/jx3-demo-minikube
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jstrachan/nodey488
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jstrachan/nodey489
+      require_self_approval: true
     blunderbuss: {}
     cat: {}
     cherry_pick_unapproved: {}
@@ -38,6 +46,38 @@ data:
       - override
       - dog
       - pony
+      jstrachan/nodey488:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      jstrachan/nodey489:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -51,6 +91,14 @@ data:
     - repos:
       - jstrachan/jx3-demo-minikube
       trusted_org: todo
+    - repos:
+      - jstrachan/nodey488
+      trusted_org: todo
+    - repos:
+      - jstrachan/nodey489
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
