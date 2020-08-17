@@ -30,7 +30,7 @@ spec:
     gitServer: https://github.com
     gitPublic: true
     helmTemplate: true
-    kubeProvider: "docker"
+    kubeProvider: "minikube"
     pipelineUsername: "jenkins-x-labs-bot"
     pipelineUserEmail: "jenkins-x@googlegroups.com"
     prowConfig: Scheduler

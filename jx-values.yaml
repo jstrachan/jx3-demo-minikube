@@ -17,8 +17,7 @@ jxRequirements:
     gitName: github
     gitServer: https://github.com
     namespace: jx
-    provider: docker
-    registry: docker-registry-jx.127.0.0.1.xip.io
+    provider: minikube
   environments:
   - ingress:
       domain: ""
@@ -51,7 +50,7 @@ jxRequirements:
     key: production
   gitops: true
   ingress:
-    domain: 127.0.0.1.xip.io
+    domain: ""
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:

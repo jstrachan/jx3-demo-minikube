@@ -64,7 +64,7 @@ data:
         - needs-rebase
         repos:
         - jstrachan/jx3-demo-minikube
-      target_url: http://deck-jx.127.0.0.1.xip.io
+      target_url: http://deck-jx.
 kind: ConfigMap
 metadata:
   creationTimestamp: null

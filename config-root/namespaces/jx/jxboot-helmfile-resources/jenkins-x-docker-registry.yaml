@@ -10,4 +10,4 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'environment'
 data:
   kaniko.flags: "--insecure"
-  docker.registry: docker-registry-jx.127.0.0.1.xip.io
+  docker.registry: docker-registry
