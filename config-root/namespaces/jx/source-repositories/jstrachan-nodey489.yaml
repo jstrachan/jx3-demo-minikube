@@ -1,0 +1,49 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jstrachan
+    provider: github
+    repository: nodey489
+    gitops.jenkins-x.io/pipeline: 'environment'
+  managedFields:
+  - apiVersion: jenkins.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:owner: {}
+          f:provider: {}
+          f:repository: {}
+      f:spec:
+        .: {}
+        f:description: {}
+        f:httpCloneURL: {}
+        f:org: {}
+        f:provider: {}
+        f:providerKind: {}
+        f:providerName: {}
+        f:repo: {}
+        f:scheduler:
+          .: {}
+          f:kind: {}
+          f:name: {}
+        f:url: {}
+    manager: jx-project-0.0.55
+    operation: Update
+    time: "2020-08-17T20:23:03Z"
+  name: jstrachan-nodey489
+spec:
+  description: Imported application for jstrachan/nodey489
+  httpCloneURL: https://github.com/jstrachan/nodey489.git
+  org: jstrachan
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: nodey489
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jstrachan/nodey489.git
