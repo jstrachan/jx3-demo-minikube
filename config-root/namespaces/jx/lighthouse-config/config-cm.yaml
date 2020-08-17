@@ -9,6 +9,14 @@ data:
               required_status_checks:
                 contexts:
                 - promotion-build
+            nodey488:
+              required_status_checks:
+                contexts:
+                - pr-build
+            nodey489:
+              required_status_checks:
+                contexts:
+                - pr-build
       protect-tested-repos: true
     deck:
       spyglass: {}
@@ -24,12 +32,38 @@ data:
         - master
         name: promotion
         skip_report: true
+      jstrachan/nodey488:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      jstrachan/nodey489:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
     presubmits:
       jstrachan/jx3-demo-minikube:
       - agent: tekton
         always_run: true
         context: promotion-build
         name: promotion-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      jstrachan/nodey488:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      jstrachan/nodey489:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
         rerun_command: /test this
         trigger: (?m)^/test( all| this),?(\s+|$)
     prowjob_namespace: jx
@@ -39,10 +73,12 @@ data:
     tide:
       context_options:
         from-branch-protection: true
-        required-if-present-contexts: []
+        required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
         jstrachan/jx3-demo-minikube: merge
+        jstrachan/nodey488: merge
+        jstrachan/nodey489: merge
       queries:
       - labels:
         - approved
@@ -54,6 +90,8 @@ data:
         - needs-rebase
         repos:
         - jstrachan/jx3-demo-minikube
+        - jstrachan/nodey488
+        - jstrachan/nodey489
       - labels:
         - updatebot
         missingLabels:
@@ -64,6 +102,8 @@ data:
         - needs-rebase
         repos:
         - jstrachan/jx3-demo-minikube
+        - jstrachan/nodey488
+        - jstrachan/nodey489
       target_url: http://deck-jx.192.168.64.4.nip.io
 kind: ConfigMap
 metadata:
