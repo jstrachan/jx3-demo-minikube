@@ -17,7 +17,6 @@ cluster:
   gitServer: https://github.com
   namespace: jx
   provider: docker
-  registry: docker-registry-jx.127.0.0.1.xip.io
 environments:
 - ingress:
     domain: ""
@@ -50,7 +49,7 @@ environments:
   key: production
 gitops: true
 ingress:
-  domain: 127.0.0.1.xip.io
+  domain: ""
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
