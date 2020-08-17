@@ -11,7 +11,7 @@ Showing logs for build [32mjstrachan-jx3-demo-minikube-pr-pkvlz-1[0m stage [3
 
 Showing logs for build [32mjstrachan-jx3-demo-minikube-pr-pkvlz-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-jstrachan-jx3-demo-minikube-pr-pkvlz-jvnsn[0m
 {"level":"info","ts":1597697198.0962002,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1597697200.7160935,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned **********************************************.git @ master in path /workspace/source"}
+{"level":"info","ts":1597697200.7160935,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/**3-demo-minikube.git @ master in path /workspace/source"}
 
 Showing logs for build [32mjstrachan-jx3-demo-minikube-pr-pkvlz-1[0m stage [32mpr-checks[0m and container [32mstep-setup-builder-home[0m
 
@@ -1151,5 +1151,5 @@ about to run: git checkout -b bump-resource-version-24250bc8-2a08-45f3-a68d-7610
 Switched to a new branch 'bump-resource-version-24250bc8-2a08-45f3-a68d-76106b77d8ad'
 M	.**/git-operator/job.yaml
 about to run: git push origin bump-resource-version-24250bc8-2a08-45f3-a68d-76106b77d8ad
-To **********************************************.git
+To https://github.com/*********/**3-demo-minikube.git
    8e2e14f..a8e150c  bump-resource-version-24250bc8-2a08-45f3-a68d-76106b77d8ad -> bump-resource-version-24250bc8-2a08-45f3-a68d-76106b77d8ad
