@@ -72,7 +72,7 @@ releases:
   name: pusher-wave
   namespace: jx
 - chart: dev/nodey489
-  version: 1.0.1
+  version: 1.0.3
   name: nodey489
   namespace: jx-staging
 templates: {}
