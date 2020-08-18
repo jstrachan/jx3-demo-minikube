@@ -1,0 +1,23 @@
+
+Showing logs for build [32mjstrachan-jx3-demo-minikube-mas-pqpb9-3[0m stage [32mrelease[0m and container [32mstep-credential-initializer-9f4p6[0m
+{"level":"info","ts":1597730017.1462193,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1597730017.1466503,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-jx3-demo-minikube-mas-pqpb9-3[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-q2lk8[0m
+{"level":"info","ts":1597730017.8100336,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1597730017.8109214,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-jx3-demo-minikube-mas-pqpb9-3[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-jx3-demo-minikube-mas-pqpb9-3[0m stage [32mrelease[0m and container [32mstep-git-source-jstrachan-jx3-demo-minikube-mas-pqpb9-gq4p2[0m
+{"level":"info","ts":1597730022.9608555,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1597730026.751256,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/**3-demo-minikube.git @ v0.0.3 in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-jx3-demo-minikube-mas-pqpb9-3[0m stage [32mrelease[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mjstrachan-jx3-demo-minikube-mas-pqpb9-3[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:21a7dd037bd10be61fdad13676cb544c41c01977
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mjstrachan-jx3-demo-minikube-mas-pqpb9-3[0m stage [32mrelease[0m and container [32mstep-release[0m
+make: Nothing to be done for 'release'.
